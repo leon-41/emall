@@ -1,0 +1,33 @@
+/*
+* @Author: Administrator
+* @Date:   2017-12-14 00:31:31
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-12-14 01:03:49
+*/
+.nav{
+	background-color: #eee;
+	height: 30px;
+	line-height: 30px;
+}
+
+/* 用户部分 */
+.nav .user{
+	float: left;
+}
+
+.nav .user.login{
+	display: none;
+}
+
+.nav .user .link{
+	margin-right: 5px;
+}
+
+/* 链接部分 */
+.nav .nav-list{
+	float: right;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-left: 5px;
+}

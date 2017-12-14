@@ -2,12 +2,33 @@
 <html lang="zh-CN">
 
 <!-- ejs模板 -->
-<%= require('html-loader!./layout/html-head.html') %>
-<body>
-kkkkkkkkkkkkkkkkkkkk
-	<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
-	<!-- <script src="../../dist/js/base.js"></script>
-	<script src="../../dist/js/index.js"></script> -->
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<!-- <title>happymmall电商平台</title> -->
+	<title><%= htmlWebpackPlugin.options.title %></title>
 
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/header.html') %>
+	<!-- <div>
+		<a  class="link"> test</a>
+		<a  class="link-text">test</a>
+	</div>
+	<div>
+		<a  class="btn"> test</a>
+		<a  class="btn btn-mini">test</a>
+	</div>
+	<div>
+		<div class="loading">ddd</div>
+	</div>
+
+	<div>
+		<i class="fa fa-user"></i>
+	</div> -->
+	<div class="page-wrap w">
+		<%= require('html-loader!./layout/nav-side.html') %>
+		<div class="content with-nav">test</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
