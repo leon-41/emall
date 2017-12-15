@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-13 03:56:20
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-13 19:53:52
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-15 19:34:34
 */
 
 
@@ -72,7 +72,7 @@ var _mm = {
 		
 		//邮箱验证
 		if(type === 'email'){
-			return /^(\w)+(\.\w+)*@(\.\w{2,3}){1,3}$/.test(value);
+			return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(value);
 		}
 	},
 
@@ -80,7 +80,7 @@ var _mm = {
 	// 统一登录处理
 	doLogin : function(){
 		//redirect 返回跳进登录页面之前的页面 encodeURIComponent防止截断
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href)
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href)
 	},
 
 	//返回主页

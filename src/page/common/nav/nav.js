@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-14 00:31:17
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-14 03:08:54
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-15 19:59:07
 */
 'use strict'
 require('./nav.css')
@@ -27,7 +27,7 @@ var nav = {
 
 		//注册点击事件
 		$('.js-register').click(function(){
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 
 		//退出点击事件
@@ -47,7 +47,7 @@ var nav = {
 	loadUserInfo : function(){
 		_user.checkLogin(
 			function(res){
-				$('.user.not-login').hidden().siblings('.user.login').show().find('username').text(res.username);
+				$('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username);
 			}, 
 			function(errMsg){
 				//do nothing

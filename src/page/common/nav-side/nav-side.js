@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-14 04:48:06
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-14 06:39:24
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 03:06:44
 */
 
 'use strict'
@@ -18,7 +18,7 @@ var navSide = {
 		navList : [
 			{ name : 'user-center',	desc : '个人中心', href : './user-center.html'},
 			{ name : 'order-list',	desc : '我的订单', href : './order-list.html'},
-			{ name : 'pass-update',	desc : '修改密码', href : './pass-update.html'},
+			{ name : 'user-pass-update',	desc : '修改密码', href : './user-pass-update.html'},
 			{ name : 'about',	desc : '关于MMall', href : './about.html'}
 		]
 	},
@@ -43,16 +43,13 @@ var navSide = {
 		var navHtml = _mm.renderHtml(templateIndex,{
 			navList : this.option.navList 
 		});
-
-		console.log(navHtml);
-
 		// 把HTML放入容器
 		$('.nav-side').html(navHtml);
 	}
 
 };
 
-// module.exports = navSide;
-navSide.init({
-	name : 'order-list'
-})
+module.exports = navSide;
+// navSide.init({
+// 	name : 'order-list'
+// })

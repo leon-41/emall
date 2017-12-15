@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-13 19:56:41
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-13 22:16:36
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 01:10:48
 */
 
 /*CSS reset 把dom元素里一些默认的样式去掉 防止不同的浏览器对其解析不同造成错乱*/ 
@@ -38,6 +38,24 @@ cursor: pointer;
 }
 .large .w{
 	width: 1600px;
+}
+
+/* 全局的panel容器 */
+.panel{
+	padding: 10px;
+	margin-bottom: 10px ;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
+	overflow: hidden;
 }
 
 /*全局通用样式*/

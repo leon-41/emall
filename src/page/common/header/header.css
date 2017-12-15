@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-14 03:36:05
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-14 04:29:19
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 00:43:57
 */
 
 /* 通用头部导航 */
@@ -14,6 +14,7 @@
 	left: 50px;
 	top: 30px;
 	font-weight: bold;
+	text-decoration: none;
 }
 .header .search-con{
 	padding: 40px 0 30px 250px;
@@ -31,4 +32,14 @@
 	position: absolute;
 	height: 44px;
 	width: 80px;
+}
+
+/* 面包屑导航 */
+.crumb{
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	color: #888;
+	font-size: 14px;
+	border-top: 2px solid #c60023;
 }

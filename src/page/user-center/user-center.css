@@ -1,0 +1,16 @@
+/*
+* @Author: leon
+* @Date:   2017-12-16 00:26:47
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 01:52:15
+*/
+.form-line{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.form-line .label{
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
