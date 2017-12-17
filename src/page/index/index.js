@@ -1,19 +1,14 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-12 06:23:20
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-14 06:39:38
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 20:40:10
 */
 
 'use strict'
-
+//导入jQuery
 // var $ = require('jquery');
 // $('body').html("HELLO");
-
-// $('body').html("HELLO index");
-
-// var $$ = require('jquery');
-// $$('body').html("HELLO");
 
 // require('../module.js');
 // require('./index.css');
@@ -37,16 +32,34 @@ console.log(_mm.getUrlParam('test'));
 
 
 //用hogan来渲染html
-var html = '<div>{{data}}</div>';
-var data = {
-	data : 123
-};
-console.log(_mm.renderHtml(html,data));
+// var html = '<div>{{data}}</div>';
+// var data = {
+// 	data : 123
+// };
+// console.log(_mm.renderHtml(html,data));
 
-// require('../common/nav-simple/index.js');
-// require('page/common/nav-simple/index.js');
+
 require('page/common/nav/nav.js');
 require('page/common/nav-side/nav-side.js');
 // var navSide = require('page/common/nav-side/nav-side.js');
 
-require('page/common/header/header.js')
+require('page/common/header/header.js');
+require('./index.css');
+
+var templateBanner = require('util/slider/slider.string');
+require('util/slider/slider.js');
+
+$(function() {
+	//渲染bannar的html
+	var bannerHtml = _mm.renderHtml(templateBanner);
+	$('.banner-con').html(bannerHtml);
+	// 初始化banner
+    var $slider = $('.banner').unslider({
+    	dots : true
+    });
+    // 前一张和后一张操作的事件绑定
+    $('.banner-arrow').click(function(){
+    	var forward = $(this).hasClass('prev') ? 'prev' : 'next';
+    	$slider.data('unslider')[forward]();
+    })
+});

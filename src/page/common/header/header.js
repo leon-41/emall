@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-12-14 03:36:05
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-12-14 04:28:23
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 21:45:24
 */
 'use strict'
 require('./header.css')
@@ -12,6 +12,7 @@ var _mm   = require('util/mm.js');
 //通用页面头部
 var header = {
 	init : function() {
+		this.onLoad();
 		this.bindEvent();
 	},
 
