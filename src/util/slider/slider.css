@@ -1,0 +1,16 @@
+/*
+* @Author: leon
+* @Date:   2017-12-16 19:42:32
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-16 19:45:06
+*/
+.banner { 
+	position: relative; 
+	overflow: auto; 
+}
+.banner li { 
+	list-style: none; 
+}
+.banner ul li { 
+	float: left; 
+}

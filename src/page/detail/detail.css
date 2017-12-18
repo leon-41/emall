@@ -1,0 +1,165 @@
+/*
+* @Author: leon
+* @Date:   2017-12-17 18:38:47
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-18 00:15:39
+*/
+/* 图片区 */
+.intro-wrap{
+	overflow: hidden;
+}
+.intro-wrap .p-img-con{
+	float: left;
+	width: 420px
+}
+.intro-wrap .p-img-con .main-img-con{
+	width: 420px;
+	height: 400px;
+	border: 1px solid #ddd
+}
+.intro-wrap .p-img-con .main-img-con .main-img{
+	width: 100%;
+	height: 100%
+}
+/* 商品缩略图 */
+.intro-wrap .p-img-con .p-img-list{
+	overflow: hidden;
+	height: 76px;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+.intro-wrap .p-img-con .p-img-list .p-img-item{
+	float: left;
+	margin-right:10px; 
+	width: 72px;
+	height: 72px;
+	border: 2px solid #eee;
+	cursor: pointer;
+}
+.intro-wrap .p-img-con .p-img-list .p-img-item .p-img{
+	width: 100%;
+	height: 100%;
+}
+.intro-wrap .p-img-con .p-img-list .p-img-item:hover{
+	border: 2px solid #c60023;
+}
+
+/* 商品信息区 */
+.intro-wrap .p-info-con{
+	float: left;
+	width: 640px;
+	margin-left: 20px;
+}
+.intro-wrap .p-info-con .p-name{
+	font-size: 20px;
+	color: #333;
+}
+.intro-wrap .p-info-con .p-subtitle{
+	font-size: 15px;
+	color: #c60023;
+	line-height: 30px;
+}
+.intro-wrap .p-info-con .p-info-item{
+	position: relative;
+	padding: 0 10px;
+	margin-top: 20px;
+	font-size: 15px;
+	color: #c60023;
+	line-height: 30px;
+}
+.intro-wrap .p-info-con .p-info-item .label{
+	display: inline-block;
+	width: 50px;
+	color: #999
+}
+ /* 价格部分 */
+.intro-wrap .p-info-con .p-price-con{
+	background: #eee;
+	padding-left: 10px;
+}
+.intro-wrap .p-info-con .p-price-con .info{
+	color: #c60023;
+	font-size: 18px;
+}
+/* 数量部分 */
+.intro-wrap .p-info-con .p-count-con{
+	background: #eee;
+	padding-left: 10px;
+}
+.intro-wrap .p-info-con .p-count-con .p-count{
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+	font-size: 15px;
+	width: 45px;
+	text-align: center;
+	outline: none;
+	border: 1px solid #aaa;
+}
+.intro-wrap .p-info-con .p-count-con .p-count-btn{
+	position: absolute;
+	display: block;
+	left: 120px;
+	width: 20px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	font-size: 10px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+	cursor: pointer;
+	user-select : none;
+}
+.intro-wrap .p-info-con .p-count-con .p-count-btn.plus{
+	top : 0;
+}
+.intro-wrap .p-info-con .p-count-con .p-count-btn.minus{
+	bottom : 0;
+}
+
+
+/* 商品详细信息*/
+.detail-wrap{
+	margin-top: 15px;
+} 
+.detail-wrap .tab-list{
+	background-color: #eee;
+	border: 1px solid #ddd;
+	
+	/* 清除浮动  子元素需要用到float 父元素用这个来清除浮动*/
+	overflow: hidden;
+	border-bottom: 1px solid #c60023;
+}
+.detail-wrap .tab-list .tab-item{
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.detail-wrap .tab-list .tab-item.active{
+	background-color: #c60023;
+	color: #fff;
+}
+.detail-wrap .detail-con{
+	padding-top: 20px;
+	background-color: #fff;
+}
+.detail-wrap .detail-con img{
+	display: block;
+	margin: auto;
+}
+
+/* 错误信息 */
+.err-tip{
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	background-color: #eee;
+}
