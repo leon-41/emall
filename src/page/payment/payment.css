@@ -1,0 +1,33 @@
+/*
+* @Author: leon
+* @Date:   2017-12-20 03:32:25
+* @Last Modified by:   leon
+* @Last Modified time: 2017-12-20 04:50:01
+*/
+
+.page-wrap{
+	background-color: #fff;
+	padding: 10px 0 25px 0
+}
+.payment-tips{
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+	text-align: center;
+	height: 40px;
+	line-height: 40px
+}
+.payment-tips.enhance{
+	color: #c60023;
+}
+.img-con{
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin: 0 auto;
+}
+.img-con .qr-code{
+	width: 100%;
+	height: 100%
+}

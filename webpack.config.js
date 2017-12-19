@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-12-12 16:43:47
 * @Last Modified by:   leon
-* @Last Modified time: 2017-12-20 01:24:22
+* @Last Modified time: 2017-12-20 04:30:30
 */
  const path = require('path');
 
@@ -35,7 +35,8 @@
           'cart'               : ['./src/page/cart/cart.js'],
           'order-confirm'      : ['./src/page/order-confirm/order-confirm.js'],
           'order-list'         : ['./src/page/order-list/order-list.js'],
-     	'order-detail'       : ['./src/page/order-detail/order-detail.js'],
+          'order-detail'       : ['./src/page/order-detail/order-detail.js'],
+     	'payment'            : ['./src/page/payment/payment.js'],
           'user-login'         : ['./src/page/user-login/user-login.js'],
           'user-register'      : ['./src/page/user-register/user-register.js'],
           'user-pass-reset'    : ['./src/page/user-pass-reset/user-pass-reset.js'],
@@ -94,6 +95,7 @@
           new HtmlWebpackPlugin(getHtmlConfig( 'order-confirm'      , '订单确认' )),
           new HtmlWebpackPlugin(getHtmlConfig( 'order-list'         , '订单列表' )),
           new HtmlWebpackPlugin(getHtmlConfig( 'order-detail'       , '订单详情' )),
+          new HtmlWebpackPlugin(getHtmlConfig( 'payment'            , '订单支付' )),
      	new HtmlWebpackPlugin(getHtmlConfig( 'result'             , '操作结果' )),
           new HtmlWebpackPlugin(getHtmlConfig( 'user-login'         , '用户登录' )),
           new HtmlWebpackPlugin(getHtmlConfig( 'user-register'      , '用户注册' )),
