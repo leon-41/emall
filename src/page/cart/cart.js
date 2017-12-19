@@ -2,7 +2,7 @@
 * @Author: leon
 * @Date:   2017-12-18 18:47:34
 * @Last Modified by:   leon
-* @Last Modified time: 2017-12-19 00:42:57
+* @Last Modified time: 2017-12-19 02:56:28
 */
 require('./cart.css')
 
@@ -150,7 +150,7 @@ var page = {
 
 			// 价格大于0 进行提交
 			if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-				window.location.href = './confirm.html';
+				window.location.href = './order-confirm.html';
 			}else{
 				_mm.errorTip('请选择商品后去提交');			
 			}
