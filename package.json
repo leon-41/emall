@@ -4,9 +4,9 @@
   "description": "E-commerce website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
-    "dist": "set WEBPACK_ENV=online && webpack -p"
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "dev"  : "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist" : "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
     "type": "git",

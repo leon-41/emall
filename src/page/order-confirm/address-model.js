@@ -2,7 +2,7 @@
 * @Author: leon
 * @Date:   2017-12-19 18:51:11
 * @Last Modified by:   leon
-* @Last Modified time: 2017-12-19 22:50:39
+* @Last Modified time: 2017-12-21 21:36:40
 */
 
 var _mm 			= require('util/mm.js');
@@ -27,7 +27,7 @@ var addressModel = {
 		this.$modelWrap.empty();
 	},
 
-	bindEvent(){
+	bindEvent : function(){
 		var _this = this;
 
 		// 这里绑定的是change事件 省份选项的改变来触发

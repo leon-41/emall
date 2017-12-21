@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-12-12 16:43:47
 * @Last Modified by:   leon
-* @Last Modified time: 2017-12-20 04:30:30
+* @Last Modified time: 2017-12-21 21:50:47
 */
  const path = require('path');
 
@@ -20,6 +20,7 @@
  		template :'./src/view/' + name + '.html',
  		filename : 'view/' + name + '.html',
           title    : title,
+          favicon  : './favicon.ico',
  		inject   : true,
  		hash     : true,      
  		chunks   : ['common',name],
@@ -43,11 +44,12 @@
           'user-center'        : ['./src/page/user-center/user-center.js'],
           'user-center-update' : ['./src/page/user-center-update/user-center-update.js'],
           'user-pass-update'   : ['./src/page/user-pass-update/user-pass-update.js'],
-     	'result'             : ['./src/page/result/result.js'],
+          'result'             : ['./src/page/result/result.js'],
+     	'about'              : ['./src/page/about/about.js'],
      },
      output: {
          path: path.resolve(__dirname, './dist'),
-         publicPath: '/dist',
+         publicPath: WEBPACK_ENV === 'dev'? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
          filename: 'js/[name].js'
      },
      externals : {
@@ -63,7 +65,14 @@
 				// 		fallback : 'style-loader' })
 			},
 			{ test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resources/[name].[ext]'},
-               { test: /\.string$/,loader : 'html-loader'} 
+               { 
+                    test   : /\.string$/,
+                    loader : 'html-loader',
+                    query  : {
+                         minimize : true,
+                         removeAttributeQuotes : false
+                    }
+               } 
 		]
 	},
 
@@ -103,6 +112,7 @@
           new HtmlWebpackPlugin(getHtmlConfig( 'user-center'        , '个人中心' )),
           new HtmlWebpackPlugin(getHtmlConfig( 'user-center-update' , '修改个人信息' )),
           new HtmlWebpackPlugin(getHtmlConfig( 'user-pass-update'   , '修改密码' )),
+          new HtmlWebpackPlugin(getHtmlConfig( 'about'              , 'happymmall' )),
      ]
  };
 
